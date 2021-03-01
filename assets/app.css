@@ -14,7 +14,7 @@
   --laranjacque: #e45826;
   --marrom-queimado: #290001;
   --faq-container: #e87248;
-  --gradiente-laranjacque-amarelo:  92.34deg, #e45826 44.26%, #f0a500 116.9%;
+  --gradiente-laranjacque-amarelo: 92.34deg, #e45826 44.26%, #f0a500 116.9%;
 
   --bonus-color-border: #b61111;
   --bonus-color-background: linear-gradient(
@@ -102,13 +102,21 @@ body {
   color: var(--laranjacque);
 }
 
+.text-yellow {
+  color: var(--amarelo);
+}
+
 b,
 strong,
 .text-strong {
   font-weight: bold;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: var(--font-family-headline);
   line-height: 160%;
 }
@@ -120,26 +128,43 @@ h1, h2, h3, h4, h5 {
   padding: 0 5px;
   margin-bottom: 30px;
 
-  background-image: -webkit-linear-gradient(var(--gradiente-laranjacque-amarelo)); /* For Chrome and Safari */
-  background-image:    -moz-linear-gradient(var(--gradiente-laranjacque-amarelo)); /* For old Fx (3.6 to 15) */
-  background-image:     -ms-linear-gradient(var(--gradiente-laranjacque-amarelo)); /* For pre-releases of IE 10*/
-  background-image:      -o-linear-gradient(var(--gradiente-laranjacque-amarelo)); /* For old Opera (11.1 to 12.0) */
-  background-image:         linear-gradient(var(--gradiente-laranjacque-amarelo)); /* Standard syntax; must be last */
+  background-image: -webkit-linear-gradient(
+    var(--gradiente-laranjacque-amarelo)
+  ); /* For Chrome and Safari */
+  background-image: -moz-linear-gradient(
+    var(--gradiente-laranjacque-amarelo)
+  ); /* For old Fx (3.6 to 15) */
+  background-image: -ms-linear-gradient(
+    var(--gradiente-laranjacque-amarelo)
+  ); /* For pre-releases of IE 10*/
+  background-image: -o-linear-gradient(
+    var(--gradiente-laranjacque-amarelo)
+  ); /* For old Opera (11.1 to 12.0) */
+  background-image: linear-gradient(
+    var(--gradiente-laranjacque-amarelo)
+  ); /* Standard syntax; must be last */
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-#modules-wrapper,
 #targets-wrapper,
-#bonus-wrapper {
+#bonus-wrapper,
+#investiment-wrapper {
   max-width: 1000px;
   flex-wrap: wrap;
   gap: 20px;
 }
 
+#modules-wrapper {
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 #section-modules,
-#section-bonus-descrition {
+#section-bonus-descrition,
+#section-investiment {
   padding: 50px 0;
   margin: 50px 0;
 }
@@ -158,9 +183,9 @@ h1, h2, h3, h4, h5 {
 .module-item {
   border-radius: 0px 20px;
   background: var(--bonus-color-background);
-  padding: 30px 45px; 
+  padding: 30px 45px;
   position: relative;
-  border: 1px solid #B61111;
+  border: 1px solid #b61111;
   font-family: var(--font-family-body);
   color: var(--burro-fugido);
 }
@@ -168,7 +193,7 @@ h1, h2, h3, h4, h5 {
 .module-date {
   font-weight: bold;
   line-height: 1.1em;
-  margin-bottom: 2px;;
+  margin-bottom: 2px;
 }
 
 .module-title-container {
@@ -192,15 +217,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .module-title::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 5px;
-    background: var(--burro-fugido);
-    border-radius: 0 9px;
-    display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background: var(--burro-fugido);
+  border-radius: 0 9px;
+  display: block;
 }
 
 .module-description {
@@ -232,11 +257,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .target-icon {
-  position: relative; 
+  position: relative;
   height: 100%;
   width: 6em;
-  content: '';
-  background: url('images/avatar__mentoria.svg') no-repeat;
+  content: "";
+  background: url("images/avatar__mentoria.svg") no-repeat;
   background-size: 100%;
   background-position: center center;
   border-radius: 0 50px 50px 0;
@@ -247,8 +272,12 @@ h1, h2, h3, h4, h5 {
   gap: 20px;
 }
 
+.bonus-shadow {
+  box-shadow: var(--box-shadow-bonus);
+}
+
 .module-description li::before {
-  content: '';
+  content: "";
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -262,7 +291,7 @@ h1, h2, h3, h4, h5 {
   left: 0;
   bottom: 0;
 }
- 
+
 .module-description li {
   position: relative;
   margin: 5px 0px;
@@ -270,4 +299,71 @@ h1, h2, h3, h4, h5 {
   padding-left: 2em;
   display: flex;
   align-items: center;
+}
+
+/** Investiment section */
+
+#investiment-wrapper {
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+#section-investiment {
+  background: linear-gradient(
+    180deg,
+    rgba(234, 224, 188, 0) 0.04%,
+    #eae0bc 23.57%,
+    #eae0bc 52.64%,
+    rgba(234, 224, 188, 0) 86.35%
+  );
+}
+
+#investiment-description {
+  flex-basis: 55%;
+  font-family: var(--font-family-body);
+  color: var(--marrom-queimado);
+}
+
+#section-investiment .section-title {
+  margin-bottom: 5px;
+  line-height: 1em;
+}
+
+#section-investiment .section-subtitle {
+  font-family: var(--font-family-body);
+  margin-bottom: 30px;
+}
+
+#warranty-badge {
+  flex-basis: 38%;
+  font-family: var(--font-family-body);
+  line-height: 115%;
+  color: var(--burro-fugido);
+  background: #290001;
+  box-shadow: 2px 10px 20px rgba(41, 0, 1, 0.5);
+  border-radius: 30px;
+  padding: 50px 25px;
+  gap: 15px;
+}
+
+#price-container {
+  gap: 15px;
+}
+
+#price_introduction {
+  font-size: 1.3em;
+  text-align: center;
+  width: 80%;
+}
+
+#price_original {
+  color: red;
+  text-decoration: line-through;
+}
+
+#price_off {
+  color: green;
+  font-weight: 700;
+  font-size: 1.3em;
 }

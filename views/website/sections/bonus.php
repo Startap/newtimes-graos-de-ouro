@@ -7,7 +7,7 @@
         
     <?php 
         $bonusElement = <<<BonusHtmlElement
-            <div class="module-item flex flex-column flex-align-items-start">
+            <div class="module-item bonus-shadow flex flex-column flex-align-items-start">
                 <div class="flex flex-column flex-align-items-center module-title-container">
                     <h2 class="module-title">%title</h2>
                     <span class="module-date">%price</span>
