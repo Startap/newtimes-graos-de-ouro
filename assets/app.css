@@ -14,11 +14,7 @@
   --laranjacque: #e45826;
   --marrom-queimado: #290001;
   --faq-container: #e87248;
-  --gradiente-laranjacque-amarelo: linear-gradient(
-    92.34deg,
-    #e45826 44.26%,
-    #f0a500 116.9%
-  );
+  --gradiente-laranjacque-amarelo:  92.34deg, #e45826 44.26%, #f0a500 116.9%;
 
   --bonus-color-border: #b61111;
   --bonus-color-background: linear-gradient(
@@ -110,4 +106,65 @@ b,
 strong,
 .text-strong {
   font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-family-headline);
+  line-height: 160%;
+}
+
+.section-title {
+  font-size: var(--font-size-title-section);
+  color: var(--gradiente-laranjacque-amarelo);
+
+  padding: 0 5px;
+
+  background-image: -webkit-linear-gradient(var(--gradiente-laranjacque-amarelo)); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(var(--gradiente-laranjacque-amarelo)); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(var(--gradiente-laranjacque-amarelo)); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(var(--gradiente-laranjacque-amarelo)); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(var(--gradiente-laranjacque-amarelo)); /* Standard syntax; must be last */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+/*************************************
+*   Targets item stylesheet
+*************************************/
+
+#targets-wrapper {
+  max-width: 1000px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.target-item {
+  background: var(--amarelo);
+  border-radius: 50px;
+  height: 4em;
+  font-size: 1.5em;
+  position: relative;
+}
+
+.target-text {
+  font-family: var(--font-family-body);
+  font-style: normal;
+  font-weight: 500;
+  padding: 0 20px 0 30px;
+  text-shadow: 0px 2px 4px rgba(41, 0, 1, 0.5);
+  letter-spacing: 1px;
+  color: var(--burro-fugido);
+}
+
+.target-icon {
+  position: relative; 
+  height: 100%;
+  width: 6em;
+  content: '';
+  background: url('images/avatar__mentoria.svg') no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  border-radius: 0 50px 50px 0;
 }
