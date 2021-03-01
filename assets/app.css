@@ -140,7 +140,70 @@ h1, h2, h3, h4, h5 {
 /*************************************
 *   Modules section stylesheet
 *************************************/
+#section-modules {
+  background: var(--marrom-queimado);
+  padding: 50px 0;
+  margin: 50px 0;
+}
 
+#section-modules #modules-wrapper {
+  gap: 35px;
+}
+
+.module-item {
+  border-radius: 0px 20px;
+  background: var(--bonus-color-background);
+  padding: 30px 45px; 
+  position: relative;
+  border: 1px solid #B61111;
+  font-family: var(--font-family-body);
+  color: var(--burro-fugido);
+}
+
+.module-date {
+  font-weight: bold;
+  line-height: 1.1em;
+  margin-bottom: 2px;;
+}
+
+.module-title-container {
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  align-items: baseline;
+}
+
+.module-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 7px;
+  height: 1.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--font-family-body);
+}
+
+.module-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    background: var(--burro-fugido);
+    border-radius: 0 9px;
+    display: block;
+}
+
+.module-description {
+  font-size: var(--font-size-base);
+  font-style: normal;
+  letter-spacing: 1px;
+  font-family: var(--font-family-body);
+}
 
 /*************************************
 *   Targets item stylesheet
