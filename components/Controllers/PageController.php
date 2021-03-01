@@ -8,9 +8,4 @@ class PageController extends ApplicationController
     {
         $this->renderViewport(['website/homepage']);
     }
-
-    public function getAfterSubscription()
-    {
-        $this->renderViewport(['website/obrigado']);
-    }
 }
