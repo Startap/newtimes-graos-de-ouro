@@ -15,8 +15,6 @@ if (file_exists($environmentFile)) {
     die('Failed attempt to read .env file. Please create a one and fill all environment variables.');
 }
 
-require __DIR__ . '/components/Language.php';
-
 $app = new Application();
 $app->bootstrapApplication();
 $app->processRequestedUri();

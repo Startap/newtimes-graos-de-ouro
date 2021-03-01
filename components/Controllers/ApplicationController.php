@@ -20,10 +20,12 @@ use Components\Application;
 class ApplicationController
 {
     private $renderer;
+    private $language;
 
     public function __construct()
     {
         $this->renderer = new \Components\Renderer($_SESSION['bootstrap']);
+        $this->language = require Application::getAppPath('/components/Language');
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-$lang = [
+return [
     'section_headline' => [
         'headline' => 'Mentoria Grãos de Ouro',
         'description' => 'Aprenda a produzir um café especial com mais de 80 pontos, aumentando em até 100% a sua produtividade.',
@@ -14,12 +14,7 @@ $lang = [
     
     'section_targets' => [
         'title' => 'Para quem é esta mentoria?',
-        'targets' => [
-            'produtor_rural' => 'Produtor Rural',
-            'cafeicultor' => 'Cafeicultor',
-            'tecnico_agricola' => 'Técnico Agrícola',
-            'tecnico_agropecuario' => 'Técnico Agropecuário',
-        ],
+        'targets' => [ 'Produtor Rural', 'Técnico Agrícola', 'Cafeicultor', 'Técnico Agropecuário', ],
     ],
 
     'section_modules' => [
