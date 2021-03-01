@@ -118,6 +118,7 @@ h1, h2, h3, h4, h5 {
   color: var(--gradiente-laranjacque-amarelo);
 
   padding: 0 5px;
+  margin-bottom: 30px;
 
   background-image: -webkit-linear-gradient(var(--gradiente-laranjacque-amarelo)); /* For Chrome and Safari */
   background-image:    -moz-linear-gradient(var(--gradiente-laranjacque-amarelo)); /* For old Fx (3.6 to 15) */
