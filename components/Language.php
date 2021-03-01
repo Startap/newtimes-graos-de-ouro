@@ -25,7 +25,7 @@ return [
             'module_03' => [ 'index_number' => '03', 'start_date' => '2021-04-05', 'end_date' => '2021-04-09', 'description' => 'Preparo da área do plantio' ],
             'module_04' => [ 'index_number' => '04', 'start_date' => '2021-04-12', 'end_date' => '2021-04-16', 'description' => 'Nutrição do Cafeeiro' ],
             'module_05' => [ 'index_number' => '05', 'start_date' => '2021-04-19', 'end_date' => '2021-04-23', 'description' => 'Condução do Cafeeiro' ],
-            'module_06' => [ 'index_number' => '06', 'start_date' => '2021-04-26', 'end_date' => '2021-04-30', 'description' => 'Adubação e calagem de produção' ],
+            'module_06' => [ 'index_number' => '06', 'start_date' => '2021-04-26', 'end_date' => '2021-04-30', 'description' => 'Adubação e calagem' ],
             'module_07' => [ 'index_number' => '07', 'start_date' => '2021-05-03', 'end_date' => '2021-05-07', 'description' => 'Deficiências nutricionais' ],
             'module_08' => [ 'index_number' => '08', 'start_date' => '2021-05-10', 'end_date' => '2021-05-14', 'description' => 'As principais pragas do cafeeiro' ],
             'module_09' => [ 'index_number' => '09', 'start_date' => '2021-05-17', 'end_date' => '2021-05-21', 'description' => 'As principais doenças do cafeeiro' ],
