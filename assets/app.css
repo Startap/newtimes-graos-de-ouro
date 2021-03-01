@@ -130,17 +130,21 @@ h1, h2, h3, h4, h5 {
   background-clip: text;
 }
 
-
-/*************************************
-*   Targets item stylesheet
-*************************************/
-
+#modules-wrapper,
 #targets-wrapper {
   max-width: 1000px;
   flex-wrap: wrap;
   gap: 20px;
 }
 
+/*************************************
+*   Modules section stylesheet
+*************************************/
+
+
+/*************************************
+*   Targets item stylesheet
+*************************************/
 .target-item {
   background: var(--amarelo);
   border-radius: 50px;
