@@ -91,6 +91,7 @@
 /** Layout CSS color declarations */
 body {
   background-color: var(--burro-fugido);
+  font-family: var(--font-family-body);
 }
 
 .bg-marrom-queimado {
@@ -164,7 +165,8 @@ h5 {
 
 #section-modules,
 #section-bonus-descrition,
-#section-investiment {
+#section-investiment,
+#section-about-maciel {
   padding: 50px 0;
   margin: 50px 0;
 }
@@ -325,7 +327,8 @@ h5 {
   color: var(--marrom-queimado);
 }
 
-#section-investiment .section-title {
+#section-investiment .section-title,
+#section-about-maciel .section-title {
   margin-bottom: 5px;
   line-height: 1em;
 }
@@ -366,4 +369,102 @@ h5 {
   color: green;
   font-weight: 700;
   font-size: 1.3em;
+}
+
+#section-about-maciel .section-title {
+  padding-left: 0;
+}
+
+#section-about-maciel #instagram-maciel {
+  margin: 5px 0 30px 0;
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+#section-about-maciel div {
+  max-width: 450px;
+}
+
+#section-about-maciel img {
+  max-width: 380px;
+}
+
+#section-about-maciel p {
+  margin-bottom: 1em;
+  line-height: 120%;
+}
+
+/** FAQ construction */
+#faq-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 940px;
+  padding: 0 20px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.faq-card {
+  width: 100%;
+  background: var(--faq-container);
+  border-radius: 5px;
+  border: 2px solid var(--laranjacque);
+  font-family: var(--font-family-body);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  gap: 0px;
+  transition: all 0.5s ease;
+}
+
+.faq-question {
+  color: var(--burro-fugido);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.faq-question span {
+  font-size: var(--font-size-title-faq);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.faq-question span::before {
+  content: url('images/faq__plus_button.svg');
+  display: flex;
+  position: relative;
+  transition: all 0.5s ease;
+  transform-origin: center center;
+}
+
+.faq-opened .faq-question span::before {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  position: relative;
+  background: var(--burro-fugido);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  line-height: 130%;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  max-height: 0;
+}
+
+.faq-answer span {
+  padding: 10px 15px;
+  display: block;
+  box-sizing: border-box;
 }

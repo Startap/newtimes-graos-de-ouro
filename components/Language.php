@@ -83,6 +83,8 @@ return [
     ],
 
     'section_about_maciel' => [
+        'title' => 'Quem é Maciel Lemos?',
+        'instagram_username' => '@office_agro',
         'paragraphs' => [
             'Maciel Lemos é Engenheiro Agrônomo, mestre em Ciências Ambientais, especialista na produção de cafés robustas e cafés especiais, além de fundado do canal <b>Office Agro</b>, no YouTube.',
             'Trabalha há 18 anos no MUNDO AGRO, nas mais diversas áreas. Principalmente no no aumento da produtividade e qualidade de bebida dos Cafés Robustas, auxiliando agricultores, acadêmicos, técnicos e engenheiros agrônomos a atingirem a "máxima" produtividade e qualidade de suas produções.'
@@ -90,37 +92,40 @@ return [
     ],
 
     'section_faq' => [
-        [ 
-            'pergunta' => 'Afinal, o que é o curso e para que serve?', 
-            'resposta' => 'É uma mentoria. A nossa meta é te ajudar a produzir mais café e com mais qualidade. Se você é técnico agrícola, técnico agropecuário, produtor rural ou cafeicultor essa mentoria é para você.' 
-        ],
-        [ 
-            'pergunta' => 'Como eu posso me inscrever?', 
-            'resposta' => 'É muito fácil fazer parte desta turma. Basta clicar em qualquer um dos botões dessa página escrito "QUERO ENTRAR NA MENTORIA". As inscrições estão abertas por tempo limitado e de forma promocional. Não perde tempo.' 
-        ],
-        [ 
-            'pergunta' => 'Quando terei meu acesso liberado?', 
-            'resposta' => 'É muito fácil fazer parte desta turma. Basta clicar em qualquer um dos botões dessa página escrito "QUERO ENTRAR NA MENTORIA". As inscrições estão abertas por tempo limitado e de forma promocional. Não perde tempo.' 
-        ],
-        [ 
-            'pergunta' => 'Como eu acesso as aulas?', 
-            'resposta' => 'As aulas estão disponíveis em plataforma online. Você pode acessar de qualquer lugar, a qualquer horário, com qualquer dispositivo - celular, tablet, notebook ou desktop. ' 
-        ],
-        [ 
-            'pergunta' => 'Por quanto tempo as aulas ficarão disponíveis?', 
-            'resposta' => 'As aulas ficam disponíveis por <b>um ano</b> após a liberação do usuário e senha. Acreditamos que esse seja o tempo mínimo necessário para você colocar todos os ensinamentos da mentoria em prática.' 
-        ],
-        [ 
-            'pergunta' => 'Há alguém para tirar dúvidas durante o curso?', 
-            'resposta' => 'Sim. Temos um grupo no Telegram criado especialmente para isso. Para troca e ajuda durante a mentoria. Tanto nossa equipe quanto os próprios alunos estão a postos para te ajudar sempre que você precisar.' 
-        ],
-        [ 
-            'pergunta' => 'O que a <b>garantia incondicional</b>?', 
-            'resposta' => 'A garantia incondicional é um direito seu. Após o pagamento você tem SETE dias para decidir se vai continuar ou não, se gostou ou não do conteúdo. Durante esse período você pode pedir seu dinheiro de volta sem pegadinhas. Apenas preenchendo esse formulário.',
-        ],
-        [ 
-            'pergunta' => 'Estou pensando em entrar na próxima turma. Posso?', 
-            'resposta' => 'A gente realmente não recomenda fazer issso. Não sabemos quando será a próxima turma e as vagas desta são limitadas. Aproveita que você já está aqui e faça sua inscrição!' 
+        'title' => 'Perguntas mais frequentes',
+        'questions'=> [
+            [ 
+                'pergunta' => 'Afinal, o que é o curso e para que serve?', 
+                'resposta' => 'É uma mentoria. A nossa meta é te ajudar a produzir mais café e com mais qualidade. Se você é técnico agrícola, técnico agropecuário, produtor rural ou cafeicultor essa mentoria é para você.' 
+            ],
+            [ 
+                'pergunta' => 'Como eu posso me inscrever?', 
+                'resposta' => 'É muito fácil fazer parte desta turma. Basta clicar em qualquer um dos botões dessa página escrito <b>QUERO ME INSCREVER NA MENTORIA</b>. As inscrições estão abertas por tempo limitado e de forma promocional. Não perde tempo.' 
+            ],
+            [ 
+                'pergunta' => 'Quando terei meu acesso liberado?', 
+                'resposta' => 'A plataforma que usamos vai te dar um usuário e senha assim que seu pagamento for confirmado (seja por boleto ou por cartão). Depois que o usuário e senha chegarem você pode acessar o curso imediatamente.' 
+            ],
+            [ 
+                'pergunta' => 'Como eu acesso as aulas?', 
+                'resposta' => 'As aulas estão disponíveis em plataforma online. Você pode acessar de qualquer lugar, a qualquer horário, com qualquer dispositivo - celular, tablet, notebook ou desktop. ' 
+            ],
+            [ 
+                'pergunta' => 'Por quanto tempo as aulas ficarão disponíveis?', 
+                'resposta' => 'As aulas ficam disponíveis por <b>um ano</b> após a liberação do usuário e senha. Acreditamos que esse seja o tempo mínimo necessário para você colocar todos os ensinamentos da mentoria em prática.' 
+            ],
+            [ 
+                'pergunta' => 'Há alguém para tirar dúvidas durante o curso?', 
+                'resposta' => 'Sim. Temos um grupo no Telegram criado especialmente para isso. Para troca e ajuda durante a mentoria. Tanto nossa equipe quanto os próprios alunos estão a postos para te ajudar sempre que você precisar.' 
+            ],
+            [ 
+                'pergunta' => 'O que é a <b>garantia incondicional</b>?', 
+                'resposta' => 'A garantia incondicional é um direito seu. Após o pagamento você tem SETE dias para decidir se vai continuar ou não, se gostou ou não do conteúdo. Durante esse período você pode pedir seu dinheiro de volta sem pegadinhas. Apenas preenchendo esse formulário.',
+            ],
+            [ 
+                'pergunta' => 'Estou pensando em entrar na próxima turma. Posso?', 
+                'resposta' => 'A gente realmente não recomenda fazer issso. Não sabemos quando será a próxima turma e as vagas desta são limitadas. Aproveita que você já está aqui e faça sua inscrição!' 
+            ],
         ],
     ],
 
