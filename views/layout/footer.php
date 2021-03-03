@@ -12,6 +12,18 @@
     <div id="copyright-container">
         © Maciel Lemos - 2021
     </div>
+
+    <div id="scroll-to-top-button">
+        <svg 
+            width="24" 
+            height="24" 
+            style="filter: invert(1);"
+            xmlns="http://www.w3.org/2000/svg" 
+            fill-rule="evenodd" 
+            clip-rule="evenodd">
+            <path d="M0 21l12-18 12 18h-24zm12-16.197l-10.132 15.197h20.263l-10.131-15.197"/>
+        </svg>
+    </div>
 </footer>
 <script type="text/javascript" src="assets/app.js"></script>
 </body>

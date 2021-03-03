@@ -25,3 +25,12 @@ foreach($sectionLanguage['questions'] as $faqItem) {
     </div>
 
 </div>
+
+<div  id="section-disclaimer-container" class="flex flex-column flex-justify-content-center flex-align-items-center">    
+    <h1 class="section-title"><?php echo $this->language['disclaimer_resultado']['title'] ?></h1>
+
+    <div id="disclaimer-badge">
+        <p><?php echo $this->language['disclaimer_resultado']['disclaimer']; ?></p>
+    </div>
+
+</div>

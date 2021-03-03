@@ -92,6 +92,7 @@
 body {
   background-color: var(--burro-fugido);
   font-family: var(--font-family-body);
+  scroll-behavior: smooth;
 }
 
 .bg-marrom-queimado {
@@ -105,6 +106,17 @@ body {
 
 .text-yellow {
   color: var(--amarelo);
+}
+
+.separador-amarelo {
+  display: block;
+  height: 25px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  content: "";
+  background: var(--amarelo);
+  box-shadow: 0px 0px 20px 0px #f0a500;
 }
 
 b,
@@ -171,6 +183,80 @@ h5 {
   margin: 50px 0;
 }
 
+#headline-container {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background: url('images/Container__Headline.png') no-repeat center;
+  background-size: cover;
+}
+
+#headline-container #video-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: max-content;
+  align-self: center;
+  width: 50%;
+  justify-content: center;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+#headline-container #video-container .youtube-iframe {
+  border-radius: 0;
+}
+
+#call-to-action-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  align-self: center;
+  gap: 4em;
+}
+
+#call-to-action-container .section-title-container .section-title {
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+#call-to-action-container .section-title-container .section-subtitle {
+  max-width: 600px;
+  color: var(--burro-fugido);
+  font-style: italic;
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+#btn-cta {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 30px;
+width: max-content;
+font-size: 1em;
+color: var(--marrom-queimado);
+background: #f0a500;
+border-radius: 8px;
+cursor: pointer;
+border: 0;
+font-family: 'Montserrat';
+text-align: left;
+text-transform: uppercase;
+font-weight: bold;
+line-height: 2em;
+transition: all 0.3s cubic-bezier(.65,.05,.36,1);
+}
+
+#btn-cta:hover {
+  scale: 1.1;
+  transform: translateX(5%);
+}
+
 /*************************************
 *   Modules and Bonuses section stylesheet
 *************************************/
@@ -206,6 +292,32 @@ h5 {
 
   .module-item {
     padding: 30px 20px;
+  }
+
+  #headline-container {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 5em;
+  }
+
+  #video-container {
+    width: 85%;    
+  }
+
+  #testimonial-grade-container {
+    grid-template-columns: 45% 45%;
+  }
+
+  #price-container {
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: baseline;
+  }
+
+  #price-introduction {
+    text-align: left;
   }
 }
 
@@ -267,7 +379,7 @@ h5 {
 }
 
 .target-item:hover {
-	box-shadow: 0px 10px 30px -15px var(--amarelo);
+  box-shadow: 0px 10px 30px -15px var(--amarelo);
   transform: scale(104%);
 }
 
@@ -380,6 +492,7 @@ h5 {
   line-height: 1em;
 }
 
+#call-to-action-container .section-subtitle,
 #section-investiment .section-subtitle,
 #section-testimonial .section-subtitle {
   font-family: var(--font-family-body);
@@ -523,7 +636,7 @@ h5 {
 }
 
 .faq-question span::before {
-  content: url('images/faq__plus_button.svg');
+  content: url("images/faq__plus_button.svg");
   display: flex;
   position: relative;
   transition: all 0.5s ease;
@@ -553,7 +666,6 @@ h5 {
   box-sizing: border-box;
 }
 
-
 /**
 * Footer personalizations
 */
@@ -571,7 +683,6 @@ h5 {
 .social-media-icon:hover {
   transform: translateY(-20%);
 }
-
 
 #copyright-container {
   font-family: var(--font-family-body);
@@ -607,10 +718,10 @@ h5 {
 }
 
 .youtube-iframe-container {
-	position: relative;
-	width: 100%;
-	padding-bottom: 53.45%;
-	height: auto;
+  position: relative;
+  width: 100%;
+  padding-bottom: 53.45%;
+  height: auto;
   border: none;
   border-radius: 10px;
   box-shadow: 0px 15px 30px -20px var(--marrom-queimado);
@@ -623,13 +734,13 @@ h5 {
 }
 
 .youtube-iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border: none;
-	border: 0;
+  border: 0;
   border-radius: 10px;
 }
 
@@ -669,4 +780,106 @@ h5 {
   .faq-question span {
     flex-direction: column;
   }
+
+  #testimonial-grade-container {
+    grid-template-columns: 100%;
+  }
+
+  #section-investiment,
+  #section-disclaimer-container,
+  #section-about-maciel {
+    padding: 0 1em;
+    box-sizing: border-box;
+  }
+
+  #section-testimonial {
+    padding: 3em 20px;
+    box-sizing: border-box;
+  }
+
+  #section-testimonial .title-container {
+    text-align: left;
+  }
+
+  #call-to-action-container {
+    padding: 0 1em;
+  }
+
+  #call-to-action-container .section-title-container .section-title { 
+    line-height: 1em;
+    padding: 0;
+  }
+  
+  #headline-container {
+    padding-bottom: 4em;
+  }
+
+  #headline-container #video-container {
+    padding: 0;
+    width: 100%;
+  }
+
+  #btn-cta {
+    line-height: 100%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+#section-disclaimer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8em;
+}
+
+#disclaimer-badge {
+  max-width: 450px;
+  font-family: var(--font-family-body);
+  line-height: 115%;
+  color: var(--burro-fugido);
+  background: #290001;
+  box-shadow: 0 10px 20px rgba(41, 0, 1, 0.7);
+  border-radius: 30px;
+  padding: 3em;
+  gap: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+#disclaimer-badge:hover {
+  scale: 1.05;
+  box-shadow: 0 15px 60px rgba(41, 0, 1, 0.7);
+}
+
+#scroll-to-top-button {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  z-index: 100;
+  border-radius: 5px;
+  background: var(--marrom-queimado);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#scroll-to-top-button:hover, 
+#scroll-to-top-button:focus {
+  animation: bounceUp running 2s infinite; 
+  -moz-animation: bounceUp running 2s infinite;
+}
+
+@keyframes bounceUp {
+  0% { transform: translateY(0) }
+  50% { transform: translateY(-15%) }
+  100% { transform: translateY(-0%) }
+}
+
+@media screen and (max-width: 600px) {
+  #scroll-to-top-button { display: none; }
 }

@@ -133,5 +133,10 @@ return [
         'telegram' => 'htps://t.me/officeagro',
         'youtube' => 'https://www.youtube.com/channel/UCet_MLo5hRPt4FuKDhRX2KA',
         'instagram' => 'https://instagram.com/office_agro',
+    ],
+
+    'disclaimer_resultado' => [
+        'title' => 'Informação importante',
+        'disclaimer' => 'Este produto não garante a obtenção de resultados.<br><br>Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como garantia de resultados.'
     ]
 ];
