@@ -10,6 +10,7 @@
     class="flex flex-row flex-justify-content-center flex-align-items-center">
     <div class="flex flex-column flex-justify-content-center flex-align-items-center">
         <img 
+            loading="lazy"
             src="/assets/images/foto__maciel.png" 
             alt="Foto de perfil do expert Maciel Lemos" 
             title="Maciel Lemos - Engenheiro Agrônomo">            

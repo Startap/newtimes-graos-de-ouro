@@ -747,7 +747,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 /**
 * Adjustments for mobile layout
 */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 780px) {
   #targets-wrapper {
     justify-content: left;
     padding: 0 20px;

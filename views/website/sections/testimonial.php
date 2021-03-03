@@ -10,6 +10,7 @@
     <div class="youtube-video">
         <div class="youtube-iframe-container">
             <iframe 
+                loading="lazy"
                 class="youtube-iframe"
                 width="988" 
                 height="556"

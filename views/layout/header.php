@@ -11,8 +11,9 @@
 
     <title>%APP_TITLE%</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Damion:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&;900display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Damion:wght@400;700&display=swap" rel="preload" as="style" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&;900display=swap" rel="preload" as="style" crossorigin>
 
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/app.css">

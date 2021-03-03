@@ -11,6 +11,7 @@
         <!-- Badge container -->
         <div class="flex flex-column flex-justify-content-center flex-align-items-center" id="warranty-badge">
             <img 
+                loading="lazy"
                 src="/assets/images/selo__garantia.png" 
                 alt="Selo de garantia incondicional de sete dias" 
                 title="Garantia incondicional de sete dias">
