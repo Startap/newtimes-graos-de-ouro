@@ -190,6 +190,12 @@ h5 {
   border: 1px solid #b61111;
   font-family: var(--font-family-body);
   color: var(--burro-fugido);
+  filter: brightness(0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.module-item:hover {
+  filter: brightness(1);
 }
 
 @media screen and (max-width: 780px) {
@@ -256,6 +262,11 @@ h5 {
   height: 4em;
   font-size: 1.5em;
   position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.target-item:hover {
+	box-shadow: 0px 10px 30px -15px var(--amarelo);
 }
 
 @media screen and (max-width: 780px) {
@@ -291,6 +302,11 @@ h5 {
 }
 
 .bonus-shadow {
+  box-shadow: 0 15px 10px -15px #e45826;
+  transition: all 0.4s ease-out;
+}
+
+.bonus-shadow:hover {
   box-shadow: var(--box-shadow-bonus);
 }
 
@@ -376,6 +392,11 @@ h5 {
   border-radius: 30px;
   padding: 50px 25px;
   gap: 15px;
+  transition: all 0.4s ease-in-out;
+}
+
+#warranty-badge:hover {
+  transform: translateY(-10%);
 }
 
 #price-container {
@@ -464,6 +485,7 @@ h5 {
 }
 
 .faq-card {
+  cursor: pointer;
   width: 100%;
   background: var(--faq-container);
   border-radius: 5px;
@@ -523,4 +545,62 @@ h5 {
   padding: 10px 15px;
   display: block;
   box-sizing: border-box;
+}
+
+
+/**
+* Footer personalizations
+*/
+
+#footer-social-media {
+  justify-content: space-around;
+  max-width: 250px;
+  margin: 2em auto;
+}
+
+#copyright-container {
+  font-family: var(--font-family-body);
+  font-weight: 700;
+  text-align: center;
+  margin: 2em auto;
+}
+
+
+
+/**
+* Adjustments for mobile layout
+*/
+@media screen and (max-width: 400px) {
+  #targets-wrapper {
+    justify-content: left;
+    padding: 0 20px;
+  }
+
+  #section-bonus-descrition .section-title,
+  #section-faq-container .section-title,
+  #section-modules .section-title,
+  #section-targets .section-title,
+  #section-investiment,
+  #section-about-maciel {
+    padding-left: 20px;
+  }
+
+  .flex-item-two-column {
+    flex-basis: 87%;
+  }
+
+  #price-container {
+    justify-content: left;
+    align-items: baseline;
+  }
+
+  #price_introduction {
+    font-size: 1.3em;
+    text-align: left;
+    width: 100%;
+  }
+
+  .faq-question span {
+    flex-direction: column;
+  }
 }

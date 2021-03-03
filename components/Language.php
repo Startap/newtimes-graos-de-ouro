@@ -119,7 +119,7 @@ return [
                 'resposta' => 'Sim. Temos um grupo no Telegram criado especialmente para isso. Para troca e ajuda durante a mentoria. Tanto nossa equipe quanto os próprios alunos estão a postos para te ajudar sempre que você precisar.' 
             ],
             [ 
-                'pergunta' => 'O que é a <b>garantia incondicional</b>?', 
+                'pergunta' => 'O que é a <b>garantia incondicional</b>', 
                 'resposta' => 'A garantia incondicional é um direito seu. Após o pagamento você tem SETE dias para decidir se vai continuar ou não, se gostou ou não do conteúdo. Durante esse período você pode pedir seu dinheiro de volta sem pegadinhas. Apenas preenchendo esse formulário.',
             ],
             [ 
