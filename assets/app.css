@@ -192,6 +192,16 @@ h5 {
   color: var(--burro-fugido);
 }
 
+@media screen and (max-width: 780px) {
+  #section-modules #modules-wrapper {
+    padding: 0 20px;
+  }
+
+  .module-item {
+    padding: 30px 20px;
+  }
+}
+
 .module-date {
   font-weight: bold;
   line-height: 1.1em;
@@ -246,6 +256,12 @@ h5 {
   height: 4em;
   font-size: 1.5em;
   position: relative;
+}
+
+@media screen and (max-width: 780px) {
+  .target-item {
+    font-size: 1.2em;
+  }
 }
 
 .target-text {
@@ -309,6 +325,18 @@ h5 {
   flex-wrap: wrap;
   gap: 20px;
   max-width: 1200px;
+}
+
+/**
+* Fixes for investment container on mobile and tablet devices
+*/
+
+@media screen and (max-width: 780px) {
+  #investiment-wrapper {
+    flex-direction: column-reverse;
+    max-width: 500px;
+    gap: 5em;
+  }
 }
 
 #section-investiment {
@@ -378,7 +406,22 @@ h5 {
 #section-about-maciel #instagram-maciel {
   margin: 5px 0 30px 0;
   text-decoration: none;
-  text-underline-offset: 2px;
+  position: relative;
+}
+
+#instagram-maciel::before {
+  content: "";
+  height: 2px;
+  background: var(--laranjacque);
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -0.5em;
+  transition: width 0.5s ease-out;
+}
+
+#instagram-maciel:hover::before {
+  width: 100%;
 }
 
 #section-about-maciel div {
@@ -387,11 +430,24 @@ h5 {
 
 #section-about-maciel img {
   max-width: 380px;
+  filter: drop-shadow(0px 10px 5px var(--laranjacque));
+  transition: all 0.5s ease-out;
+}
+
+#section-about-maciel img:hover {
+  filter: drop-shadow(0px 10px 20px var(--laranjacque));
 }
 
 #section-about-maciel p {
   margin-bottom: 1em;
   line-height: 120%;
+}
+
+@media screen and (max-width: 780px) {
+  #section-about-maciel {
+    flex-direction: column-reverse;
+    gap: 2em;
+  }
 }
 
 /** FAQ construction */
