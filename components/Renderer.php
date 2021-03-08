@@ -45,6 +45,11 @@ class Renderer
             $this->application->getKeywords(),
             $headerFile
         );
+        $headerFile = str_replace(
+            '%applicationStyle%',
+            ($this->isSalePage()) ? 'assets/app.css' : 'assets/leads.css',
+            $headerFile            
+        );
         
         return $headerFile;
     }
@@ -56,14 +61,22 @@ class Renderer
     public function drawFooter()
     {
         $scriptsTemplate = '';
-        $footerFile = \file_get_contents($this->application->getAppPath('views/layout/footer'));
+        $filenameToImport = ($this->isSalePage()) ? 'footer' : 'footer_leads';
+        
+        $footerFileContent = \file_get_contents($this->application->getAppPath("views/layout/$filenameToImport"));
 
-        if ($_ENV['ENVIRONMENT'] == 'production') {
+        if ($_ENV['ENVIRONMENT'] === 'production') {
             $scriptsTemplate = file_get_contents($this->application->getAppPath('views/layout/scripts'));
         }
 
-        $footerFile = str_replace('%scripts_template%', $scriptsTemplate, $footerFile);
-        return $footerFile;
+        return str_replace('%scripts_template%', $scriptsTemplate, $footerFileContent);
+    }
+
+    /**
+     * Checks if our application it's on main leads page or in main sales page
+     */
+    private function isSalePage() {
+        return (strpos($_SERVER['REQUEST_URI'], 'mentoria') > 0);
     }
 
 }
