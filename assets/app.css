@@ -461,7 +461,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 * Fixes for investment container on mobile and tablet devices
 */
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 850px) {
   #investiment-wrapper {
     flex-direction: column-reverse;
     max-width: 500px;
@@ -777,8 +777,15 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
     width: 100%;
   }
 
-  .faq-question span {
+  .faq-question {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .faq-question span {
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
   }
 
   #testimonial-grade-container {
