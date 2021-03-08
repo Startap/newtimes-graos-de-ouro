@@ -14,7 +14,7 @@ return [
     
     'section_targets' => [
         'title' => 'Para quem é esta mentoria?',
-        'targets' => [ 'Produtor Rural', 'Técnico Agrícola', 'Cafeicultor', 'Técnico Agropecuário', ],
+        'targets' => [ 'Produtor Rural', 'Técnico Agrícola', 'Cafeicultor', 'Técnico Agropecuário', 'Engenheiro Agrônomo' ],
     ],
 
     'section_modules' => [
