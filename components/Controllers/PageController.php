@@ -6,7 +6,7 @@ class PageController extends ApplicationController
 { 
 
     public function getHomepage() {
-        $this->renderViewport(['website/homepage']);
+        $this->renderViewport(['website/captura']);
     }
 
     public function getObrigado() {

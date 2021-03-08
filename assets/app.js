@@ -2,6 +2,7 @@ document.onreadystatechange = () => {
   if (document.readyState === "complete") {
     setupFaqAnimations();
     setupScrollToTop();
+    setupScrollToTopLeads();
   }
 };
 
@@ -20,17 +21,39 @@ function setupFaqAnimations() {
       /**
        * Get indications of opened or closed panel
        */
-      this.style.gap = panelOpened ? '15px' : '0px';
-      faqAnswer.style.maxHeight = panelOpened ? faqAnswer.scrollHeight + "px" : "0px";
+      this.style.gap = panelOpened ? "15px" : "0px";
+      faqAnswer.style.maxHeight = panelOpened
+        ? faqAnswer.scrollHeight + "px"
+        : "0px";
     });
   }
 }
 
 function setupScrollToTop() {
-  document
-    .querySelector("#scroll-to-top-button")
-    .addEventListener('click', () => {
+  let backToTop = document.querySelector("#scroll-to-top-button");
+
+  if (backToTop) {
+    backToTop.addEventListener("click", () => {
       let scrollPosition = document.querySelector("#video-container").offsetTop;
-      window.scrollTo({ top: scrollPosition - 100, behavior: 'smooth' })
-    })
+      window.scrollTo({ top: scrollPosition - 100, behavior: "smooth" });
+    });
+  }
+}
+
+function setupScrollToTopLeads() {
+  let scrollLandingPage = document.getElementsByClassName("scroll-top");
+
+  if (scrollLandingPage.length > 0) {
+    for (let element of scrollLandingPage) {
+      element.addEventListener("click", () => {
+        let positionToScroll = document.querySelector("#subscription")
+          .offsetTop;
+        window.scrollTo({ top: positionToScroll, left: 0, behavior: "smooth" });
+      });
+    }
+  }
+}
+
+function goBack() {
+  window.history.back();
 }
