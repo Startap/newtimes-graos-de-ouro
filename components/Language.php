@@ -5,6 +5,9 @@ return [
         'headline' => 'Mentoria Grãos de Ouro',
         'description' => 'Aprenda a produzir um café especial com mais de 80 pontos, aumentando em até 100% a sua produtividade.',
         'button_text' => 'Quero me inscrever na mentoria',
+
+        'main_youtube_video' => 'daqZt0o8YP4',
+        'infoproduct_url' => 'https://localhost:8000'
     ],
 
     'section_testimonials' => [
@@ -77,7 +80,7 @@ return [
         'description' => 'Um investimento especial com valor promocional, e por tempo limitado',
         'price_introduction' => 'O investimento para a <b>Mentoria Grãos de Ouro mais o Bônus Exclusivo</b> é de',
         'price_original' => 'R$ 3.390,00 (ou 12x de R$ 294,00)',
-        'price_off' => 'R$ 997,00 (ou 12x de R$ 99,70)',
+        'price_off' => 'R$ 997,00 (ou 12x de R$ 97,14)',
 
         'warranty_disclaimer' => 'Se você iniciar o curso e, <b>por qualquer motivo</b>, não quiser ou não puder continuar é só enviar um e-mail para <b class="text-yellow">contato@officeagro.com.br</b> até sete dias após confirmação do pagamento.'
     ],

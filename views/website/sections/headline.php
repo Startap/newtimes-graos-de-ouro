@@ -6,7 +6,7 @@
                     class="youtube-iframe"
                     width="988" 
                     height="556"
-                    src="https://www.youtube.com/embed/78mYkbfsXRM" 
+                    src="https://www.youtube.com/embed/<?php echo $this->language['section_headline']['main_youtube_video'] ?>" 
                     frameborder="0" 
                     allow="accelerometer; encrypted-media; gyroscope;" 
                     allowfullscreen>
@@ -21,7 +21,10 @@
             <h2 class="section-subtitle"><?php echo $this->language['section_headline']['description'] ?></h2>
         </div>
 
-        <button id="btn-cta"><?php echo $this->language['section_headline']['button_text'] ?></button>
+        
+        <a target="_blank" style="text-decoration: none;" href="<?php echo $this->language['section_headline']['infoproduct_url'] ?>">
+            <button id="btn-cta"><?php echo $this->language['section_headline']['button_text'] ?></button>
+        </a>
     </div>
 </div>
 
