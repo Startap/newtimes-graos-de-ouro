@@ -25,6 +25,6 @@
         </svg>
     </div>
 </footer>
-<script type="text/javascript" src="assets/app.js"></script>
+<script type="text/javascript" src="/assets/app.js"></script>
 </body>
 </html>

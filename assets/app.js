@@ -4,7 +4,9 @@ document.onreadystatechange = () => {
     setupScrollToTop();
     setupScrollToTopLeads();
 
-    setupFormHandler()
+    if (document.querySelector('#_form_3_')) {
+      setupFormHandler()
+    }
   }
 };
 

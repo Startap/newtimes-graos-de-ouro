@@ -432,3 +432,84 @@ input:focus {
         opacity: 1;
     }
 }
+
+.ty-social-network-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.ty-social-network-wrapper h2 {
+    text-transform: uppercase;
+    margin: 2rem auto;
+    border: 2px solid var(--laranjacque);
+    box-sizing: border-box;
+    border-left: 0;
+    border-right: 0;
+    padding: 1rem;
+}
+
+.ty-social-network-card {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 10px -20px black;
+    transition: transform .3s ease-out;
+}
+
+.ty-social-network-card:hover {
+    transform: translateY(-10px);
+}
+
+.ty-social-network-wrapper h3 {
+    margin-bottom: 2rem;
+}
+
+.ty-social-network-card span {
+    font-size: 1.2rem !important;
+    margin-top: .7em;
+    color: var(--marrom-queimado);
+}
+
+.ty-social-network-card .iconify {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    transition: transform .3s ease-out;
+}
+
+.ty-social-network-card:hover .iconify {
+    transform: rotate(-5deg) !important;
+}
+
+.ty-social-network-card.whatsapp {
+    background: rgba(0, 230, 118, 40%);
+}
+
+.ty-social-network-card.telegram {
+    background: rgba(64, 179, 224, 40%);
+}
+
+@media screen and (min-width: 700px) {
+    .ty-social-network-card-containers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 800px;
+        margin: auto;
+    }
+    .ty-social-network-card-containers a {
+        margin: 0 25px;
+    }
+}
