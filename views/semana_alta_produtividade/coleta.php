@@ -5,13 +5,15 @@
         <h2>Descubra o caminho para altas produtividades na produção de café</h2>
     </article>
 </section>
-
+<div class="flex flex-justify-content-center flex-row" style="margin-bottom: 60px;">
+    <img src="/assets/images/divisoria.svg" alt="" title="">
+</div>
 <section class="section__content" id="form__section">
     <article>
         <h3>Você vai aprender o passo a passo para produzir
             café com alta produtividade e alta qualidade</h3>
 
-        <p><span class="iconify" data-icon="carbon:calendar-heat-map" data-inline="false"></span>
+        <p class="calendar__container"><span class="iconify" data-icon="carbon:calendar-heat-map" data-inline="false"></span>
             <span>De 03 a 07 de abril, às 20:00 horas</span>
         </p>
 
@@ -50,7 +52,7 @@
                 </div>
                 <div class="_button-wrapper _full_width">
                     <button id="_form_3_submit" class="_submit" type="submit">
-                        Enviar
+                        Quero me inscrever nas aulas
                     </button>
                 </div>
                 <div class="_clear-element">

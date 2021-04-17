@@ -63,12 +63,17 @@ class Renderer
      */
     public function drawFooter()
     {
-        $filenameToImport = Router::currentUrlHas('mentoria') ? 'footer_mentoria' : 'footer_index';
         $scriptsTemplate = ($_ENV['ENVIRONMENT'] === 'production')
             ? \file_get_contents($this->application->getAppPath('views/layout/scripts'))
             : '';
-
-        $footerFileContent = \file_get_contents($this->application->getAppPath("views/layout/$filenameToImport"));
+        
+        // Initialize variable
+        $footerFilename = 'footer_index';
+        if (Router::currentUrlHas('mentoria') or Router::currentUrlHas('semana-alta-produtividade')) {
+            $footerFilename = 'footer_semana_alta_produtividade';
+        }
+        
+        $footerFileContent = \file_get_contents($this->application->getAppPath("views/layout/$footerFilename"));
         return str_replace('%scripts_template%', $scriptsTemplate, $footerFileContent);
     }
 }

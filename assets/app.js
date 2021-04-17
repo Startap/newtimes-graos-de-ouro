@@ -36,7 +36,7 @@ function setupScrollToTop() {
 
   if (backToTop) {
     backToTop.addEventListener("click", () => {
-      let scrollPosition = document.querySelector("#video-container").offsetTop;
+      let scrollPosition = document.querySelector("body").offsetTop;
       window.scrollTo({ top: scrollPosition - 100, behavior: "smooth" });
     });
   }
