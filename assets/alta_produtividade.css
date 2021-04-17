@@ -98,17 +98,11 @@ b, strong {
     justify-content: center;
     align-items: center;
     height: fit-content;
-<<<<<<< HEAD
     width: 100%;
     padding: 2rem 0;
     color: var(--burro-fugido);
     background: var(--laranjacque);
     font-weight: bold;
-=======
-    width: 70%;
-    margin: auto;
-    color: var(--marrom-queimado);
->>>>>>> ce4db6d8d3646537d85bac388c410f8fb45f22a7
 }
 
 .calendar__container .iconify {
