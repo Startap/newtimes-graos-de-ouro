@@ -13,7 +13,7 @@ use Components\Application;
  * @author André Paul Grandsire
  * @version $Revision: 0.1 $
  */
-class Renderer 
+class Renderer
 {
     private $application;
 
@@ -45,12 +45,15 @@ class Renderer
             $this->application->getKeywords(),
             $headerFile
         );
-        $headerFile = str_replace(
-            '%applicationStyle%',
-            ($this->isSalePage()) ? 'assets/app.css' : 'assets/leads.css',
-            $headerFile            
-        );
-        
+
+        $styleSheetPath = 'assets/leads.css';
+        if (Router::currentUrlHas('mentoria')) {
+            $styleSheetPath = 'assets/mentoria.css';
+        }
+        if (Router::currentUrlHas('semana-alta-produtividade')) {
+            $styleSheetPath = 'assets/alta_produtividade.css';
+        }
+        $headerFile = str_replace('%applicationStyle%', $styleSheetPath, $headerFile);
         return $headerFile;
     }
 
@@ -60,23 +63,17 @@ class Renderer
      */
     public function drawFooter()
     {
-        $scriptsTemplate = '';
-        $filenameToImport = ($this->isSalePage()) ? 'footer' : 'footer_leads';
+        $scriptsTemplate = ($_ENV['ENVIRONMENT'] === 'production')
+            ? \file_get_contents($this->application->getAppPath('views/layout/scripts'))
+            : '';
         
-        $footerFileContent = \file_get_contents($this->application->getAppPath("views/layout/$filenameToImport"));
-
-        if ($_ENV['ENVIRONMENT'] === 'production') {
-            $scriptsTemplate = file_get_contents($this->application->getAppPath('views/layout/scripts'));
+        // Initialize variable
+        $footerFilename = 'footer_index';
+        if (Router::currentUrlHas('mentoria') or Router::currentUrlHas('semana-alta-produtividade')) {
+            $footerFilename = 'footer_semana_alta_produtividade';
         }
-
+        
+        $footerFileContent = \file_get_contents($this->application->getAppPath("views/layout/$footerFilename"));
         return str_replace('%scripts_template%', $scriptsTemplate, $footerFileContent);
     }
-
-    /**
-     * Checks if our application it's on main leads page or in main sales page
-     */
-    private function isSalePage() {
-        return (strpos($_SERVER['REQUEST_URI'], 'mentoria') > 0);
-    }
-
 }
