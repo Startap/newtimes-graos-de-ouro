@@ -64,4 +64,12 @@ class Router
             $controllerInstance->$targetMethod();
         }
     }
+
+    public static function currentUrlPath() {
+        return $_SERVER['REQUEST_URI'];
+    }
+
+    public static function currentUrlHas(String $path) {
+        return (strpos(Router::currentUrlPath(), $path) > 0);
+    }
 }
