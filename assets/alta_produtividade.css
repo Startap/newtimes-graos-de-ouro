@@ -24,6 +24,10 @@ body img {
     display: block;
 }
 
+b, strong {
+    font-weight: bold;
+}
+
 #topbar__section {
     padding: 1.4rem .8rem;
     box-sizing: border-box;
@@ -167,11 +171,41 @@ body img {
     font-size: 1.2rem;
     font-weight: bold;
     font-family: var(--font-family-body);
-    background: var(--laranjacque);
+    background-color: var(--laranjacque);
     color: var(--burro-fugido);
     border-radius: 8px;
     margin-top: .8rem;
-    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    border: 2px solid var(--laranjacque);
+    transition: color .1s linear 0s, background-color .2s ease-in-out .1s, box-shadow .4s ease-out .1s;
+}
+
+._submit::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    content: '';
+    background: linear-gradient( 45deg, transparent 30%, var(--burro-fugido) 50%, transparent 80%);
+    filter: blur(0px);
+    transform: skewX(-62deg);
+    left: -100%;
+    bottom: 0;
+    transition: left .3s ease-in;
+}
+
+._submit:hover {
+    background-color: var(--burro-fugido);
+    color: var(--marrom-queimado);
+    box-shadow: 0 15px 35px -20px #222222;
+}
+
+._submit:hover::before {
+    left: 100%;
 }
 
 .flex-column {
@@ -189,6 +223,7 @@ body img {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: left;
+    color: var(--laranjacque);
 }
 
 #instagram-maciel {
@@ -202,6 +237,19 @@ body img {
     font-weight: bold;
 }
 
+#instagram-maciel::after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    height: 5px;
+    width: 0%;
+    left: 5rem;
+    bottom: 5px;
+    box-sizing: border-box;
+    background: var(--laranjacque);
+    transition: all .3s ease-out;
+}
+
 #instagram-maciel::before {
     content: '';
     position: absolute;
@@ -210,6 +258,10 @@ body img {
     height: 100%;
     width: 2.5rem;
     background: url('https://api.iconify.design/bx:bxl-instagram-alt.svg?color=%23e45826') no-repeat center center / contain;
+}
+
+#instagram-maciel:hover::after {
+    width: 5rem;
 }
 
 .flex-column p {
@@ -280,5 +332,103 @@ body img {
 @media screen and (max-width: 600px) {
     #scroll-to-top-button {
         display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #form__section article {
+        display: grid;
+        grid-template: "form chamada" "form data";
+        grid-template-columns: 1fr 1fr;
+        align-items: self-start;
+        margin: 3rem 0;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+    }
+    #form__section article::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        opacity: .1;
+        background: url('https://api.iconify.design/whh:coffeebean.svg?color=%23e45826&flip=horizontal') no-repeat 10rem center / contain;
+        filter: blur(10px);
+    }
+    #form__section article h3 {
+        grid-area: chamada;
+        margin: auto auto 0 auto;
+    }
+    #form__section article p {
+        grid-area: data;
+        padding: 0;
+        margin: 0 auto;
+    }
+    #_form_3_ {
+        grid-area: form;
+    }
+    .divisoria {
+        margin-bottom: 60px;
+        max-width: 500px;
+        margin: 0 auto 60px auto;
+        opacity: .5;
+    }
+    footer .divisoria {
+        display: none;
+    }
+    #section-about-maciel {
+        display: flex;
+    }
+}
+
+input {
+    transition: border-color .2s ease-out .1s;
+}
+
+input:focus {
+    border: 1px var(--laranjacque) solid;
+    outline: none;
+}
+
+@keyframes slideAndWidthLeft {
+    0% {
+        left: 0;
+        width: 0%;
+    }
+    50% {
+        left: 10%;
+        width: 30%;
+    }
+    70% {
+        left: 30%;
+        width: 20%;
+    }
+}
+
+._has_error {
+    border: 1px solid #FF0000 !important;
+}
+
+._error-inner {
+    font-weight: bold;
+    color: #FF0000;
+    text-indent: 1rem;
+    opacity: 0;
+    font-variant: all-small-caps;
+    font-size: 1.5rem;
+    top: -10px;
+    position: relative;
+    animation: opacityEnter .2s linear .1s forwards;
+}
+
+@keyframes opacityEnter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

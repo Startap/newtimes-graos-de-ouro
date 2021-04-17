@@ -5,7 +5,7 @@
         <h2>Descubra o caminho para altas produtividades na produção de café</h2>
     </article>
 </section>
-<div class="flex flex-justify-content-center flex-row" style="margin-bottom: 60px;">
+<div class="flex flex-justify-content-center flex-row divisoria" style="margin-bottom: 60px;">
     <img src="/assets/images/divisoria.svg" alt="" title="">
 </div>
 <section class="section__content" id="form__section">

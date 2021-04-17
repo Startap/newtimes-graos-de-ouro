@@ -1,5 +1,5 @@
 <footer>
-    <div class="flex flex-justify-content-center flex-row" style="margin-bottom: 60px;">
+    <div class="flex flex-justify-content-center flex-row divisoria" style="margin-bottom: 60px;">
         <img src="/assets/images/divisoria.svg" alt="" title="" >
     </div>
     
