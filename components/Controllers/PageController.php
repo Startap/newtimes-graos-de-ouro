@@ -17,4 +17,12 @@ class PageController extends ApplicationController
     {
         $this->renderViewport(['website/mentoria']);
     }
+
+    public function getSemanaAltaProdutividadeIndex() {
+        $this->renderViewport(['semana_alta_produtividade/index']);
+    }
+
+    public function getSemanaAltaProdutividadeObrigado() {
+        $this->renderViewport(['semana_alta_produtividade/obrigado']);
+    }
 }
