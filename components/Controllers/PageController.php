@@ -19,7 +19,7 @@ class PageController extends ApplicationController
     }
 
     public function getSemanaAltaProdutividadeIndex() {
-        $this->renderViewport(['semana_alta_produtividade/index']);
+        $this->renderViewport(['semana_alta_produtividade/coleta']);
     }
 
     public function getSemanaAltaProdutividadeObrigado() {

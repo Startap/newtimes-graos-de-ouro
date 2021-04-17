@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700;900&display=swap" crossorigin>
 
     <!-- Estilos de aplicacao -->
-    <link rel="stylesheet" href="assets/reset.css">    
+    <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="%applicationStyle%">
 
     <!-- Favicon declarations -->
@@ -28,6 +29,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
 
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
