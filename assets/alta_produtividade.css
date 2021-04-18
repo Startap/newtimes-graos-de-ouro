@@ -339,14 +339,11 @@ b, strong {
 
 @media screen and (min-width: 700px) {
     #form__section article {
-        display: grid;
-        grid-template: "form chamada" "form data";
-        grid-template-columns: 1fr 1fr;
-        align-items: self-start;
-        margin: 3rem 0;
-        box-sizing: border-box;
-        position: relative;
+        display: flex;
         z-index: 1;
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
     }
     #form__section article::after {
         content: '';
@@ -363,13 +360,16 @@ b, strong {
     #form__section article h3 {
         grid-area: chamada;
         margin: auto auto 0 auto;
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin-bottom: 1rem;
     }
     #form__section article p {
         grid-area: data;
         padding: 0;
         margin: 0 auto;
         padding: 1rem 0 1rem 2rem;
-        border-radius: 0px 0 0 12px;
+        border-radius: 12px;
         box-shadow: inset 0px 4px 20px -12px #222;
     }
     #_form_3_ {
