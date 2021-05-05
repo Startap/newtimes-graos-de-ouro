@@ -661,7 +661,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 }
 
 .faq-answer span {
-  padding: 10px 15px;
+  padding: 2rem 1.5rem;
   display: block;
   box-sizing: border-box;
 }
