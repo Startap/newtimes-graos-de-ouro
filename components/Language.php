@@ -5,9 +5,12 @@ return [
         'headline' => 'Mentoria Grãos de Ouro',
         'description' => 'Aprenda a produzir um café especial com mais de 80 pontos, aumentando em até 100% a sua produtividade.',
         'button_text' => 'Quero me inscrever na mentoria',
-
         'main_youtube_video' => 'daqZt0o8YP4',
-        'infoproduct_url' => 'https://localhost:8000'
+        'infoproduct_url' => 'https://localhost:8000',
+        
+        'treinamento.headline' => 'Treinamento Grãos de Ouro',
+        'treinamento.button_text' => 'ENTRAR NO TREINAMENTO',
+        'treinamento.infoproduct_url' => 'https://localhost:8000',
     ],
 
     'section_testimonials' => [
@@ -17,11 +20,13 @@ return [
     
     'section_targets' => [
         'title' => 'Para quem é esta mentoria?',
+        'treinamento.title' => 'Para quem é este treinamento?',
         'targets' => [ 'Produtor Rural', 'Técnico Agrícola', 'Cafeicultor', 'Técnico Agropecuário', 'Engenheiro Agrônomo' ],
     ],
 
     'section_modules' => [
         'title' => 'Quais são os módulos da mentoria?',
+        'treinamento.title' => 'Quais são os módulos do treinamento?',
         'modules' => [
             'module_01' => [ 'index_number' => '01', 'start_date' => '2021-03-22', 'end_date' => '2021-03-26', 'description' => 'Conceitos Iniciais' ],
             'module_02' => [ 'index_number' => '02', 'start_date' => '2021-03-29', 'end_date' => '2021-04-02', 'description' => 'Implantação de Lavoura' ],
@@ -82,7 +87,10 @@ return [
         'price_original' => 'R$ 3.390,00 (ou 12x de R$ 294,00)',
         'price_off' => 'R$ 997,00 (ou 12x de R$ 97,14)',
 
-        'warranty_disclaimer' => 'Se você iniciar o curso e, <b>por qualquer motivo</b>, não quiser ou não puder continuar é só enviar um e-mail para <b class="text-yellow">contato@officeagro.com.br</b> até sete dias após confirmação do pagamento.'
+        'warranty_disclaimer' => 'Se você iniciar o curso e, <b>por qualquer motivo</b>, não quiser ou não puder continuar é só enviar um e-mail para <b class="text-yellow">contato@officeagro.com.br</b> até sete dias após confirmação do pagamento.',
+
+        'treinamento.title' => 'Qual o investimento do treinamento?',
+        'treinamento.price_introduction' => 'O investimento para o <b>Treinamento Grãos de Ouro mais o Bônus Exclusivo</b> é de',
     ],
 
     'section_about_maciel' => [
@@ -128,6 +136,40 @@ return [
             [ 
                 'pergunta' => 'Estou pensando em entrar na próxima turma. Posso?', 
                 'resposta' => 'A gente realmente não recomenda fazer issso. Não sabemos quando será a próxima turma e as vagas desta são limitadas. Aproveita que você já está aqui e faça sua inscrição!' 
+            ],
+        ],
+        'treinamento.questions'=> [
+            [ 
+                'pergunta' => 'Afinal, o que é o curso e para que serve?', 
+                'resposta' => 'É um treinamento. A nossa meta é te ajudar a produzir mais café e com mais qualidade. Se você é técnico agrícola, técnico agropecuário, produtor rural ou cafeicultor esse treinamento é para você.' 
+            ],
+            [ 
+                'pergunta' => 'Como eu posso me inscrever?', 
+                'resposta' => 'É muito fácil fazer parte desta turma. Basta clicar em qualquer um dos botões dessa página escrito <b>ENTRAR NO TREINAMENTO</b>. As inscrições estão abertas por tempo limitado e de forma promocional. Não perca tempo.' 
+            ],
+            [ 
+                'pergunta' => 'Quando terei meu acesso liberado?', 
+                'resposta' => 'A plataforma que usamos vai te dar um usuário e senha assim que seu pagamento for confirmado (seja por boleto ou por cartão). Depois que o usuário e senha chegarem você pode acessar o curso imediatamente.' 
+            ],
+            [ 
+                'pergunta' => 'Como eu acesso as aulas?', 
+                'resposta' => 'As aulas estão disponíveis em plataforma online. Você pode acessar de qualquer lugar, a qualquer horário, com qualquer dispositivo - celular, tablet, notebook ou desktop. ' 
+            ],
+            [ 
+                'pergunta' => 'Por quanto tempo as aulas ficarão disponíveis?', 
+                'resposta' => 'As aulas ficam disponíveis por <b>um ano</b> após a liberação do usuário e senha. Acreditamos que esse seja o tempo mínimo necessário para você colocar todos os ensinamentos do treinamento em prática.' 
+            ],
+            [ 
+                'pergunta' => 'Há alguém para tirar dúvidas durante o treinamento?', 
+                'resposta' => 'Sim. Temos um grupo no Telegram criado especialmente para isso. Para troca e ajuda durante o treinamento. Tanto nossa equipe quanto os próprios alunos estão a postos para te ajudar sempre que você precisar.' 
+            ],
+            [ 
+                'pergunta' => 'O que é a <b>garantia incondicional</b>', 
+                'resposta' => 'A garantia incondicional é um direito seu. Após o pagamento você tem SETE dias para decidir se vai continuar ou não, se gostou ou não do conteúdo. Durante esse período você pode pedir seu dinheiro de volta sem pegadinhas. Apenas preenchendo um formulário.',
+            ],
+            [ 
+                'pergunta' => 'Estou pensando em entrar na próxima turma. Posso?', 
+                'resposta' => 'Não realmente não recomenda fazer issso. Não sabemos quando será a próxima turma e as vagas desta são limitadas. Aproveite que você já está aqui e faça sua inscrição!' 
             ],
         ],
     ],

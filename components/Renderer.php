@@ -47,10 +47,9 @@ class Renderer
         );
 
         $styleSheetPath = 'assets/leads.css';
-        if (Router::currentUrlHas('mentoria')) {
+        if (Router::currentUrlHas('mentoria') or Router::currentUrlHas('treinamento-graos-de-ouro')) {
             $styleSheetPath = 'assets/mentoria.css';
-        }
-        if (Router::currentUrlHas('semana-alta-produtividade')) {
+        } else {
             $styleSheetPath = 'assets/alta_produtividade.css';
         }
         $headerFile = str_replace('%applicationStyle%', $styleSheetPath, $headerFile);
@@ -69,7 +68,10 @@ class Renderer
         
         // Initialize variable
         $footerFilename = 'footer_index';
-        if (Router::currentUrlHas('mentoria') or Router::currentUrlHas('semana-alta-produtividade')) {
+        if (Router::currentUrlHas('mentoria') 
+            or Router::currentUrlHas('semana-alta-produtividade') 
+            or Router::currentUrlHas('treinamento-graos-de-ouro')
+        ) {
             $footerFilename = 'footer_semana_alta_produtividade';
         }
         
