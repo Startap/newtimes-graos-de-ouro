@@ -10,3 +10,5 @@ Router::route('/mentoria', '\Components\Controllers\PageController@getMentoria')
 
 Router::route('/semana-alta-produtividade', '\Components\Controllers\PageController@getSemanaAltaProdutividadeIndex');
 Router::route('/semana-alta-produtividade/obrigado', '\Components\Controllers\PageController@getSemanaAltaProdutividadeObrigado');
+
+Router::route('/treinamento-graos-de-ouro', '\Components\Controllers\PageController@getTreinamentoGraosDeOuro');

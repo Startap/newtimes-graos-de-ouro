@@ -9,6 +9,8 @@
     <meta name="author" content="André Paul Grandsire <https://github.com/andrepg>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="facebook-domain-verification" content="gmo046kzggndnrm30sdfceo66l0cm6" />
+
     <title>%APP_TITLE%</title>
 
     <!-- Mentoria Graos de Ouro -->
