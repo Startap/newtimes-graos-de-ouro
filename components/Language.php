@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'button_cta' => [
+        'treinamento.calltoaction' => 'PARTICIPE DO TREINAMENTO'
+    ],
+
     'section_headline' => [
         'headline' => 'Mentoria Grãos de Ouro',
         'description' => 'Aprenda a produzir um café especial com mais de 80 pontos, aumentando em até 100% a sua produtividade.',
@@ -10,7 +14,8 @@ return [
         
         'treinamento.headline' => 'Treinamento Grãos de Ouro',
         'treinamento.button_text' => 'ENTRAR NO TREINAMENTO',
-        'treinamento.infoproduct_url' => 'https://localhost:8000',
+        'treinamento.youtube_video' => 'FL1qDi5lowY',
+        'treinamento.url_hotmart' => 'https://pay.hotmart.com/Q53135700J',
     ],
 
     'section_testimonials' => [
@@ -130,7 +135,7 @@ return [
                 'resposta' => 'Sim. Temos um grupo no Telegram criado especialmente para isso. Para troca e ajuda durante a mentoria. Tanto nossa equipe quanto os próprios alunos estão a postos para te ajudar sempre que você precisar.' 
             ],
             [ 
-                'pergunta' => 'O que é a <b>garantia incondicional</b>', 
+                'pergunta' => 'O que é a <b>garantia incondicional</b>?', 
                 'resposta' => 'A garantia incondicional é um direito seu. Após o pagamento você tem SETE dias para decidir se vai continuar ou não, se gostou ou não do conteúdo. Durante esse período você pode pedir seu dinheiro de volta sem pegadinhas. Apenas preenchendo esse formulário.',
             ],
             [ 
@@ -164,7 +169,7 @@ return [
                 'resposta' => 'Sim. Temos um grupo no Telegram criado especialmente para isso. Para troca e ajuda durante o treinamento. Tanto nossa equipe quanto os próprios alunos estão a postos para te ajudar sempre que você precisar.' 
             ],
             [ 
-                'pergunta' => 'O que é a <b>garantia incondicional</b>', 
+                'pergunta' => 'O que é a <b>garantia incondicional</b>?', 
                 'resposta' => 'A garantia incondicional é um direito seu. Após o pagamento você tem SETE dias para decidir se vai continuar ou não, se gostou ou não do conteúdo. Durante esse período você pode pedir seu dinheiro de volta sem pegadinhas. Apenas preenchendo um formulário.',
             ],
             [ 

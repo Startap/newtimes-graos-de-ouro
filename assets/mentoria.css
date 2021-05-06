@@ -231,7 +231,7 @@ h5 {
   font-weight: bold;
 }
 
-#btn-cta {
+.btn-cta {
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -252,8 +252,8 @@ line-height: 2em;
 transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 }
 
-#btn-cta:hover {
-  scale: 1.1;
+.btn-cta:hover {
+  transform: scale(1.1);
   transform: translateX(5%);
 }
 
@@ -282,7 +282,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 
 .module-item:hover {
   filter: brightness(1);
-  scale: 1.04;
+  transform: scale(1.04);
 }
 
 @media screen and (max-width: 780px) {
@@ -380,7 +380,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 
 .target-item:hover {
   box-shadow: 0px 10px 30px -15px var(--amarelo);
-  transform: scale(104%);
+  transform: scale(1.04);
 }
 
 @media screen and (max-width: 780px) {
@@ -627,7 +627,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
   width: 100%;
 }
 
-.faq-question span {
+.faq-question p {
   font-size: var(--font-size-title-faq);
   display: flex;
   align-items: center;
@@ -635,7 +635,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
   position: relative;
 }
 
-.faq-question span::before {
+.faq-question p::before {
   content: url("images/faq__plus_button.svg");
   display: flex;
   position: relative;
@@ -643,7 +643,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
   transform-origin: center center;
 }
 
-.faq-opened .faq-question span::before {
+.faq-opened .faq-question p::before {
   transform: rotate(45deg);
 }
 
@@ -660,7 +660,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
   max-height: 0;
 }
 
-.faq-answer span {
+.faq-answer p {
   padding: 2rem 1.5rem;
   display: block;
   box-sizing: border-box;
@@ -729,7 +729,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 }
 
 .youtube-iframe-container:hover {
-  transform: scale(102%);
+  transform: scale(1.02);
   box-shadow: 0px 15px 60px -20px var(--marrom-queimado);
 }
 
@@ -826,7 +826,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
     width: 100%;
   }
 
-  #btn-cta {
+  .btn-cta {
     line-height: 100%;
     width: 100%;
     margin: auto;
@@ -856,7 +856,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 }
 
 #disclaimer-badge:hover {
-  scale: 1.05;
+  transform: scale(1.05);
   box-shadow: 0 15px 60px rgba(41, 0, 1, 0.7);
 }
 

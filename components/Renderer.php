@@ -49,9 +49,11 @@ class Renderer
         $styleSheetPath = 'assets/leads.css';
         if (Router::currentUrlHas('mentoria') or Router::currentUrlHas('treinamento-graos-de-ouro')) {
             $styleSheetPath = 'assets/mentoria.css';
-        } else {
+        } 
+        if (Router::currentUrlHas('semana-alta-produtividade')) {
             $styleSheetPath = 'assets/alta_produtividade.css';
         }
+
         $headerFile = str_replace('%applicationStyle%', $styleSheetPath, $headerFile);
         return $headerFile;
     }
