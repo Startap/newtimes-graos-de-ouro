@@ -1,4 +1,9 @@
 <div id="headline-container">
+    <div class="section-title-container">
+        <h1 class="section-title"><?php echo $this->language['section_headline']['treinamento.headline'] ?></h1>
+        <h2 class="section-subtitle"><?php echo $this->language['section_headline']['description'] ?></h2>
+    </div>
+
     <div id="video-container">
         <div class="youtube-video">
             <div class="youtube-iframe-container">
@@ -9,12 +14,6 @@
     </div>
 
     <div id="call-to-action-container">
-        <div class="section-title-container">
-            <h1 class="section-title"><?php echo $this->language['section_headline']['treinamento.headline'] ?></h1>
-            <h2 class="section-subtitle"><?php echo $this->language['section_headline']['description'] ?></h2>
-        </div>
-
-
         <a target="_blank" style="text-decoration: none;" href="<?php echo $this->language['section_headline']['treinamento.url_hotmart'] ?>">
             <button class="btn-cta"><?php echo $this->language['button_cta']['treinamento.calltoaction'] ?></button>
         </a>

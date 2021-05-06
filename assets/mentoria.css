@@ -15,21 +15,13 @@
   --marrom-queimado: #290001;
   --faq-container: #e87248;
   --gradiente-laranjacque-amarelo: 92.34deg, #e45826 44.26%, #f0a500 116.9%;
-
   --bonus-color-border: #b61111;
-  --bonus-color-background: linear-gradient(
-    97.67deg,
-    #e45826 5.19%,
-    #e4744c 69.31%
-  );
-
+  --bonus-color-background: linear-gradient( 97.67deg, #e45826 5.19%, #e4744c 69.31%);
   /**
     * Fontes do layout
     */
-
   --font-family-headline: "Damion", sans-serif;
   --font-family-body: "Montserrat", sans-serif;
-
   /**
     * Tamanho de fontes do layout
     */
@@ -38,16 +30,15 @@
   --font-size-title-section: 3em;
   --font-size-subtitle-section: 1.5em;
   --font-size-title-faq: 1.125em;
-
   /** Shadows */
   --box-shadow-amarelo: 0px 5px 19px -10px #f0a500;
   --box-shadow-garantia: 2px 10px 20px rgba(41, 0, 1, 0.5);
   --box-shadow-bonus: 0px 15px 30px -15px #e45826;
-
   --filter-youtube-player: drop-shadow(0px 16px 32px rgba(35, 23, 5, 0.26));
 }
 
 /** Default classes to manage layout **/
+
 .relative {
   position: relative;
 }
@@ -89,6 +80,7 @@
 }
 
 /** Layout CSS color declarations */
+
 body {
   background-color: var(--burro-fugido);
   font-family: var(--font-family-body);
@@ -100,6 +92,7 @@ body {
 }
 
 /** Default typography basic settings */
+
 .text-orange {
   color: var(--laranjacque);
 }
@@ -116,20 +109,14 @@ body {
   padding: 0;
   content: "";
   background: var(--amarelo);
-  box-shadow: 0px 0px 20px 0px #f0a500;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 25%);
 }
 
-b,
-strong,
-.text-strong {
+b, strong, .text-strong {
   font-weight: bold;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   font-family: var(--font-family-headline);
   line-height: 160%;
 }
@@ -137,33 +124,24 @@ h5 {
 .section-title {
   font-size: var(--font-size-title-section);
   color: var(--gradiente-laranjacque-amarelo);
-
   padding: 0 5px;
   margin-bottom: 30px;
-
-  background-image: -webkit-linear-gradient(
-    var(--gradiente-laranjacque-amarelo)
-  ); /* For Chrome and Safari */
-  background-image: -moz-linear-gradient(
-    var(--gradiente-laranjacque-amarelo)
-  ); /* For old Fx (3.6 to 15) */
-  background-image: -ms-linear-gradient(
-    var(--gradiente-laranjacque-amarelo)
-  ); /* For pre-releases of IE 10*/
-  background-image: -o-linear-gradient(
-    var(--gradiente-laranjacque-amarelo)
-  ); /* For old Opera (11.1 to 12.0) */
-  background-image: linear-gradient(
-    var(--gradiente-laranjacque-amarelo)
-  ); /* Standard syntax; must be last */
+  background-image: -webkit-linear-gradient( var(--gradiente-laranjacque-amarelo));
+  /* For Chrome and Safari */
+  background-image: -moz-linear-gradient( var(--gradiente-laranjacque-amarelo));
+  /* For old Fx (3.6 to 15) */
+  background-image: -ms-linear-gradient( var(--gradiente-laranjacque-amarelo));
+  /* For pre-releases of IE 10*/
+  background-image: -o-linear-gradient( var(--gradiente-laranjacque-amarelo));
+  /* For old Opera (11.1 to 12.0) */
+  background-image: linear-gradient( var(--gradiente-laranjacque-amarelo));
+  /* Standard syntax; must be last */
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-#targets-wrapper,
-#bonus-wrapper,
-#investiment-wrapper {
+#targets-wrapper, #bonus-wrapper, #investiment-wrapper {
   max-width: 1000px;
   flex-wrap: wrap;
   gap: 20px;
@@ -175,20 +153,21 @@ h5 {
   gap: 20px;
 }
 
-#section-modules,
-#section-bonus-descrition,
-#section-investiment,
-#section-about-maciel {
+#section-modules, #section-bonus-descrition, #section-investiment, #section-about-maciel {
   padding: 50px 0;
   margin: 50px 0;
 }
 
 #headline-container {
+  padding: 2rem 1rem 3rem 1rem;
   width: 100%;
   box-sizing: border-box;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: url('images/Container__Headline.png') no-repeat center;
   background-size: cover;
 }
@@ -199,7 +178,7 @@ h5 {
   position: relative;
   height: max-content;
   align-self: center;
-  width: 50%;
+  width: 60%;
   justify-content: center;
   padding: 0 25px;
   box-sizing: border-box;
@@ -218,38 +197,45 @@ h5 {
   gap: 4em;
 }
 
-#call-to-action-container .section-title-container .section-title {
-  font-size: 4em;
-  margin-bottom: 0;
+#headline-container .section-title-container {
 }
 
-#call-to-action-container .section-title-container .section-subtitle {
+#headline-container .section-title-container .section-title {
+  font-size: 4em;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+#headline-container .section-title-container .section-subtitle {
+  line-height: 120%;
   max-width: 600px;
   color: var(--burro-fugido);
+  font-family: var(--font-family-body);
   font-style: italic;
   font-size: 1.125em;
   font-weight: bold;
 }
 
 .btn-cta {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 20px 30px;
-width: max-content;
-font-size: 1em;
-color: var(--marrom-queimado);
-background: #f0a500;
-border-radius: 8px;
-cursor: pointer;
-border: 0;
-font-family: 'Montserrat';
-text-align: left;
-text-transform: uppercase;
-font-weight: bold;
-line-height: 2em;
-transition: all 0.3s cubic-bezier(.65,.05,.36,1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  width: max-content;
+  font-size: 1em;
+  color: var(--marrom-queimado);
+  background: #f0a500;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 0;
+  font-family: 'Montserrat';
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2em;
+  transition: all 0.3s cubic-bezier(.65, .05, .36, 1);
 }
 
 .btn-cta:hover {
@@ -260,6 +246,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 /*************************************
 *   Modules and Bonuses section stylesheet
 *************************************/
+
 #section-modules {
   background: var(--marrom-queimado);
 }
@@ -289,25 +276,20 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
   #section-modules #modules-wrapper {
     padding: 0 20px;
   }
-
   .module-item {
     padding: 30px 20px;
   }
-
   #headline-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-end;
     gap: 5em;
   }
-
   #video-container {
-    width: 85%;    
+    width: 85%;
   }
-
   #testimonial-grade-container {
     grid-template-columns: 45% 45%;
   }
-
   #price-container {
     justify-content: left;
     display: flex;
@@ -315,7 +297,6 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
     align-content: flex-start;
     align-items: baseline;
   }
-
   #price-introduction {
     text-align: left;
   }
@@ -369,6 +350,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 /*************************************
 *   Targets item stylesheet
 *************************************/
+
 .target-item {
   background: var(--amarelo);
   border-radius: 50px;
@@ -411,6 +393,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 }
 
 /** Bonuses specific replacements */
+
 #bonus-wrapper .flex-item-two-column {
   gap: 20px;
 }
@@ -470,13 +453,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 }
 
 #section-investiment {
-  background: linear-gradient(
-    180deg,
-    rgba(234, 224, 188, 0) 0.04%,
-    #eae0bc 23.57%,
-    #eae0bc 52.64%,
-    rgba(234, 224, 188, 0) 86.35%
-  );
+  background: linear-gradient( 180deg, rgba(234, 224, 188, 0) 0.04%, #eae0bc 23.57%, #eae0bc 52.64%, rgba(234, 224, 188, 0) 86.35%);
 }
 
 #investiment-description {
@@ -485,16 +462,12 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
   color: var(--marrom-queimado);
 }
 
-#section-investiment .section-title,
-#section-testimonial .section-title,
-#section-about-maciel .section-title {
+#section-investiment .section-title, #section-testimonial .section-title, #section-about-maciel .section-title {
   margin-bottom: 5px;
-  line-height: 1em;
+  /* line-height: 1em; */
 }
 
-#call-to-action-container .section-subtitle,
-#section-investiment .section-subtitle,
-#section-testimonial .section-subtitle {
+#call-to-action-container .section-subtitle, #section-investiment .section-subtitle, #section-testimonial .section-subtitle {
   font-family: var(--font-family-body);
   margin-bottom: 30px;
 }
@@ -591,6 +564,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 }
 
 /** FAQ construction */
+
 #faq-container {
   display: flex;
   position: relative;
@@ -601,6 +575,10 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
   padding: 0 20px;
   margin-bottom: 50px;
   box-sizing: border-box;
+}
+
+#faq-container .section-title {
+  align-self: flex-start;
 }
 
 .faq-card {
@@ -694,6 +672,7 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 /**
 * Testimonial section
 */
+
 #section-testimonial {
   display: block;
   position: relative;
@@ -747,85 +726,64 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
 /**
 * Adjustments for mobile layout
 */
+
 @media screen and (max-width: 780px) {
   #targets-wrapper {
     justify-content: left;
     padding: 0 20px;
   }
-
-  #section-bonus-descrition .section-title,
-  #section-faq-container .section-title,
-  #section-modules .section-title,
-  #section-targets .section-title,
-  #section-investiment,
-  #section-about-maciel {
+  #section-bonus-descrition .section-title, #section-faq-container .section-title, #section-modules .section-title, #section-targets .section-title, #section-investiment, #section-about-maciel {
     padding-left: 20px;
   }
-
   .flex-item-two-column {
     flex-basis: 87%;
   }
-
   #price-container {
     justify-content: left;
     align-items: baseline;
   }
-
   #price_introduction {
     font-size: 1.3em;
     text-align: left;
     width: 100%;
   }
-
   .faq-question {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .faq-question span {
     flex-direction: row;
     width: 100%;
     align-items: flex-start;
   }
-
   #testimonial-grade-container {
     grid-template-columns: 100%;
   }
-
-  #section-investiment,
-  #section-disclaimer-container,
-  #section-about-maciel {
+  #section-investiment, #section-disclaimer-container, #section-about-maciel {
     padding: 0 1em;
     box-sizing: border-box;
   }
-
   #section-testimonial {
     padding: 3em 20px;
     box-sizing: border-box;
   }
-
   #section-testimonial .title-container {
     text-align: left;
   }
-
   #call-to-action-container {
     padding: 0 1em;
   }
-
-  #call-to-action-container .section-title-container .section-title { 
+  #call-to-action-container .section-title-container .section-title {
     line-height: 1em;
     padding: 0;
   }
-  
   #headline-container {
     padding-bottom: 4em;
   }
-
   #headline-container #video-container {
     padding: 0;
     width: 100%;
   }
-
   .btn-cta {
     line-height: 100%;
     width: 100%;
@@ -875,18 +833,31 @@ transition: all 0.3s cubic-bezier(.65,.05,.36,1);
   cursor: pointer;
 }
 
-#scroll-to-top-button:hover, 
-#scroll-to-top-button:focus {
-  animation: bounceUp running 2s infinite; 
+#scroll-to-top-button:hover, #scroll-to-top-button:focus {
+  animation: bounceUp running 2s infinite;
   -moz-animation: bounceUp running 2s infinite;
 }
 
 @keyframes bounceUp {
-  0% { transform: translateY(0) }
-  50% { transform: translateY(-15%) }
-  100% { transform: translateY(-0%) }
+  0% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(-15%)
+  }
+  100% {
+    transform: translateY(-0%)
+  }
 }
 
 @media screen and (max-width: 600px) {
-  #scroll-to-top-button { display: none; }
+  #scroll-to-top-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1, h2, h3, h4 {
+    line-height: 80%;
+  }
 }

@@ -14,7 +14,7 @@ return [
         
         'treinamento.headline' => 'Treinamento Grãos de Ouro',
         'treinamento.button_text' => 'ENTRAR NO TREINAMENTO',
-        'treinamento.youtube_video' => 'FL1qDi5lowY',
+        'treinamento.youtube_video' => '9WrxRwgtx0Q',
         'treinamento.url_hotmart' => 'https://pay.hotmart.com/Q53135700J',
     ],
 
@@ -108,7 +108,7 @@ return [
     ],
 
     'section_faq' => [
-        'title' => 'Perguntas mais frequentes',
+        'title' => 'Tire suas dúvidas',
         'questions'=> [
             [ 
                 'pergunta' => 'Afinal, o que é o curso e para que serve?', 
