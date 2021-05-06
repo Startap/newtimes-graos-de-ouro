@@ -174,7 +174,7 @@ return [
             ],
             [ 
                 'pergunta' => 'Estou pensando em entrar na próxima turma. Posso?', 
-                'resposta' => 'Não realmente não recomenda fazer issso. Não sabemos quando será a próxima turma e as vagas desta são limitadas. Aproveite que você já está aqui e faça sua inscrição!' 
+                'resposta' => 'Não recomendamos fazer issso. Não temos estimativa de quando vamos abrir outra turma e esta já está com as vagas limitadas. Aproveite que você já está aqui e faça sua inscrição!' 
             ],
         ],
     ],
