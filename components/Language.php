@@ -9,7 +9,7 @@ return [
         'headline' => 'Mentoria Grãos de Ouro',
         'description' => 'Aprenda a produzir um café especial com mais de 80 pontos, aumentando em até 100% a sua produtividade.',
         'button_text' => 'Quero me inscrever na mentoria',
-        'main_youtube_video' => 'daqZt0o8YP4',
+        'main_youtube_video' => 'trqGCpWA70k',
         'infoproduct_url' => 'https://localhost:8000',
         
         'treinamento.headline' => 'Treinamento Grãos de Ouro',
