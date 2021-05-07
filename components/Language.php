@@ -14,7 +14,7 @@ return [
         
         'treinamento.headline' => 'Treinamento Grãos de Ouro',
         'treinamento.button_text' => 'ENTRAR NO TREINAMENTO',
-        'treinamento.youtube_video' => '9WrxRwgtx0Q',
+        'treinamento.youtube_video' => 'ao2ja8mxLwk',
         'treinamento.url_hotmart' => 'https://pay.hotmart.com/Q53135700J',
     ],
 
