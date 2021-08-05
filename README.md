@@ -1,3 +1,7 @@
+# ⛔ REPOSITÓRIO ARQUIVADO
+
+Este cliente não trabalha mais com a agência parceira. Por isso o repositório foi arquivado.
+
 # 🌿 Mentoria Grãos de Ouro
 
 Uma mentoria para cafeicultores e pessoas envolvidas no processo de produção cafeeira. Landing page para venda de infoproduto.
